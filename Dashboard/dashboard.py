@@ -3,6 +3,8 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objs as go
 from babel.numbers import format_currency
+day_df = pd.read_csv("Dashboard/day_all.csv")
+
 st.set_page_config(layout="wide")
 
 st.markdown('<style>' + open('./style.css').read() + '</style>', unsafe_allow_html=True)
